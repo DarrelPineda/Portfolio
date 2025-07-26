@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darrel Pineda - Web Developer</title>
+    <meta name="description" content="Full Stack Web Developer specializing in modern web technologies">
+    <meta name="keywords" content="web developer, full stack, javascript, react, node.js">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- External Fonts and Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">DA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Darrel Pineda</h1>
+            <p class="subtitle">Junior Web Developer</p>
+            <p class="description">
+                Crafting digital experiences with modern technologies. 
+                Passionate about creating beautiful, functional, and user-friendly web applications.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+                <a href="assets/resume.pdf" class="btn btn-outline" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/profile.jpg" height="400px" width="500px" alt="Darrel Pineda" loading="lazy">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="about-text">
+                <h3>Hello! I'm Darrel Pineda</h3>
+                <p>
+                    I'm a passionate Junior web developer with over 1 years of experience 
+                    creating digital solutions that make a difference. I love turning complex 
+                    problems into simple, beautiful, and intuitive designs.
+                </p>
+                <p>
+                    My expertise spans across modern JavaScript frameworks, backend technologies, 
+                    and cloud services. I'm constantly learning and adapting to new technologies 
+                    to deliver cutting-edge solutions.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new technologies, 
+                    contributing to open source projects, or enjoying a good cup of coffee 
+                    while brainstorming the next big idea.
+                </p>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Bootsrap</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Cloud</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="section fade-in">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-card" data-project="taskmanager">
+            <div class="project-image">
+                <img src="images/projects/task-management.jpg" alt="Task Management App" loading="lazy">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>A collaborative project management tool with real-time updates, file sharing, and team communication features.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">OpenWeather Api</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="weather">
+            <div class="project-image">
+                <img src="images/projects/weather-dashboard.jpg" alt="Weather Dashboard" loading="lazy">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Weather Dashboard</h3>
+                <p>A responsive weather application with location-based forecasts, interactive maps, and beautiful data visualizations.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">OpenWeather API</span>
+                    <span class="tech-tag">Flutter</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="label">Email</span>
+                            <span class="value">darrelpineda13@email.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="label">Phone</span>
+                            <span class="value">63+ 9213327932</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="label">Location</span>
+                            <span class="value">Capas, Tarlac, PH</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span class="label">Response Time</span>
+                            <span class="value">Within 24 hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Darrel Pineda</h4>
+                <p>Junior Web Developer passionate about creating amazing digital experiences.</p>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/bossda13" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/da_pinedaaa/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://dribbble.com" target="_blank" aria-label="Dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Mobile Apps</li>
+                    <li>Consulting</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Darrel Pineda. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>
