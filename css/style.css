@@ -891,4 +891,39 @@ footer {
 .opacity-0 { opacity: 0; }
 .opacity-50 { opacity: 0.5; }
 .opacity-100 { opacity: 1; }
+/* Comment Section */
+.comment-form {
+  margin-top: 2rem;
+}
+
+.comment-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.comment-form textarea,
+.comment-form input {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-form button {
+  margin-top: 10px;
+}
+
+.comments-list {
+  margin-top: 2rem;
+}
+
+.comment-box {
+  background: #f8f8f8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #3f72af;
+}
+
 

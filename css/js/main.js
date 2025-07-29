@@ -689,3 +689,26 @@ document.addEventListener('DOMContentLoaded', () => {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { PortfolioApp, utils, analytics };
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const commentForm = document.getElementById('comment-form');
+  const commentsList = document.getElementById('comments-list');
+
+  commentForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('comment-name').value.trim();
+    const comment = document.getElementById('comment-text').value.trim();
+
+    if (name && comment) {
+      const commentBox = document.createElement('div');
+      commentBox.classList.add('comment-box');
+      commentBox.innerHTML = `
+        <strong>${name}</strong>
+        <p>${comment}</p>
+      `;
+      commentsList.prepend(commentBox);
+
+      commentForm.reset();
+    }
+  });
+});
