@@ -222,7 +222,7 @@ nav {
     justify-content: center;
     position: relative;
     text-align: center;
-    background: var(--gradient-1); /* Replaced bubbles with gradient */
+    background: var(--gradient-1);
 }
 
 .hero-content {
@@ -852,35 +852,106 @@ footer {
 
 /* Comment Section */
 .comment-form {
-  margin-top: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .comment-form .form-group {
-  margin-bottom: 1rem;
+    position: relative;
+    margin-bottom: 1.5rem;
 }
 
-.comment-form textarea,
-.comment-form input {
-  width: 100%;
-  padding: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--text-muted);
+    border-radius: var(--border-radius);
+    background: var(--bg-dark);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: var(--transition);
 }
 
-.comment-form button {
-  margin-top: 10px;
+.comment-form input:focus,
+.comment-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(59, 59, 59, 0.2);
+}
+
+.comment-form label {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 1rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+    background: var(--bg-dark);
+    padding: 0 0.25rem;
+}
+
+.comment-form input:focus ~ label,
+.comment-form input:valid ~ label,
+.comment-form textarea:focus ~ label,
+.comment-form textarea:valid ~ label {
+    top: -0.75rem;
+    left: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+}
+
+.comment-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-form .btn-primary {
+    width: 100%;
+    justify-content: center;
 }
 
 .comments-list {
-  margin-top: 2rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
 }
 
 .comment-box {
-  background: #f8f8f8;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 6px;
-  border-left: 4px solid #3B3B3B;
+    background: var(--bg-card);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.comment-box:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.comment-box .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.comment-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.comment-box p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment-box .timestamp {
+    font-size: 0.75rem;
+    color: var(--text-muted);
 }
